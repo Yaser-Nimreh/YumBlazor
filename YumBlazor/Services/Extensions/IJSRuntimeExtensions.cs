@@ -13,5 +13,15 @@ namespace YumBlazor.Services.Extensions
         {
             await _JSRuntime.InvokeVoidAsync("ShowToastr", "error", message);
         }
+
+        public static async Task ShowConfirmationModal(this IJSRuntime _JSRuntime)
+        {
+            await _JSRuntime.InvokeVoidAsync("ShowConfirmationModal");
+        }
+
+        public static async Task HideConfirmationModal(this IJSRuntime _JSRuntime)
+        {
+            await _JSRuntime.InvokeVoidAsync("HideConfirmationModal");
+        }
     }
 }
