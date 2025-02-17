@@ -9,3 +9,10 @@
 @using Microsoft.JSInterop
 @using YumBlazor
 @using YumBlazor.Components
+@using YumBlazor.Repositories.Interfaces
+@using YumBlazor.Models
+@using YumBlazor.Services.Extensions
+
+@inject NavigationManager navigationManager
+@inject IJSRuntime _JSRuntime
+@inject ICategoryRepository categoryRepository
